@@ -1,4 +1,4 @@
-class NavigationHelper:
+class NavigationMethods:
     def __init__(self, app):
         self.driver = app.driver
 

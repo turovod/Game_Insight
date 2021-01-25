@@ -1,25 +1,30 @@
 from selenium import webdriver
-from fixtures import service_helper, navigation_helper
+
+from fixtures.get_file_url_helper import GetFileUrl
+from fixtures.service_helper import ServiceMethods
+from fixtures.navigation_helper import NavigationMethods
 
 
 class Application:
     def __init__(self, browser, base_url):
 
+        self.get_file_urls = GetFileUrl()
+
         if browser == "firefox":
-            self.driver = webdriver.Firefox(executable_path=self.adapted_url_to_webdriver("drivers\geckodriver.exe"))
+            self.driver = webdriver.Firefox(
+                executable_path=self.get_file_urls.get_file_url("sight\drivers\geckodriver.exe"))
         elif browser == "chrome":
-            self.driver = webdriver.Chrome(executable_path=self.adapted_url_to_webdriver("drivers\chromedriver.exe"))
+            self.driver = webdriver.Chrome(
+                executable_path=self.get_file_urls.get_file_url("sight\drivers\chromedriver.exe"))
         elif browser == "edge":
-            self.driver = webdriver.Edge(executable_path=self.adapted_url_to_webdriver("drivers\msedgedriver.exe"))
+            self.driver = webdriver.Edge(
+                executable_path=self.get_file_urls.get_file_url("sight\drivers\msedgedriver.exe"))
         else:
             raise ValueError(f"Unrecognised browser {browser}")
+
         self.base_url = base_url
-        self.service_helper = service_helper
-        self.navigation_helper = navigation_helper
+        self.service_methods = ServiceMethods(self)
+        self.navigation_methods = NavigationMethods(self)
 
 
-    def adapted_url_to_webdriver(self, local_driver_url):
-        wd_url = __file__
-        wd_url = wd_url.strip("fixture\\application.py")
-        wd_url = "\\".join([wd_url, local_driver_url])
-        return wd_url
+

@@ -1,7 +1,7 @@
 from selenium.common.exceptions import NoSuchElementException
 
 
-class ServiceHelper:
+class ServiceMethods:
     def __init__(self, app):
         self.driver = app.driver
 

@@ -1,4 +1,4 @@
 {
-  "baseUrl": "https://www.game-insight.com/",
+  "base_url": "https://www.game-insight.com/",
   "browser": "chrome"
 }
