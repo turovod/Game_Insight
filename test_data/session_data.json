@@ -1,4 +1,14 @@
 {
   "base_url": "https://www.game-insight.com/",
-  "browser": "chrome"
+  "browser": "chrome",
+  "games_list": [
+    "AIRPORT СITY",
+    "THE TRIBEZ",
+    "MYSTERY MANOR",
+    "GODS OF BOOM",
+    "PARADISE ISLAND 2",
+    "TRADE ISLAND",
+    "SOLITAIRE",
+    "MIRRORS OF ALBION"
+  ]
 }

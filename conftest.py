@@ -12,10 +12,11 @@ def app():
     global fixture
 
     if fixture is None or not fixture.is_valid():
-        url_session_data = "\\".join([os.path.dirname(__file__), "test_data\\session_data.json"])
-        with open(url_session_data) as f:
+        url_session = "\\".join([os.path.dirname(__file__), "test_data\\session_data.json"])
+        with open(url_session, encoding='utf-8') as f:
             session_data = json.load(f)
-        fixture = Application(browser=session_data["browser"], base_url=session_data["base_url"])
+        fixture = Application(session_data=session_data)
+
     return fixture
 
 
