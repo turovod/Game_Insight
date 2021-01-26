@@ -3,6 +3,7 @@ from selenium import webdriver
 from fixtures.get_file_url_helper import GetFileUrl
 from fixtures.service_helper import ServiceMethods
 from fixtures.navigation_helper import NavigationMethods
+from fixtures.sett_localization_helper import SetLocalization
 from model.session_model import SessionModel
 
 
@@ -27,6 +28,7 @@ class Application:
         self.service_methods = ServiceMethods(self)
         self.navigation_methods = NavigationMethods(self)
         self.session_models = SessionModel(self, session_data)
+        self.localization = SetLocalization(self)
 
 
 
