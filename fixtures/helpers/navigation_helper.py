@@ -11,4 +11,5 @@ class NavigationMethods:
     def open_home_page(self):
         driver = self.driver
         driver.get(self.base_url)
+        driver.maximize_window()
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "html")))

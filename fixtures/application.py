@@ -8,6 +8,7 @@ from fixtures.helpers.wait_helper import WaitMethods
 from fixtures.tests_helpers.get_items_from_main_page_helper import ItemsFromMainPage
 from fixtures.tests_helpers.get_projects_from_main_page_helper import ProjectListFromMainPage
 from fixtures.tests_helpers.present_games_helper import PresentGame
+from fixtures.tests_helpers.show_description_games_helper import ShowDescriptionGames
 from model.session_model import SessionModel
 
 
@@ -37,6 +38,13 @@ class Application:
         self.project_list_from_main_page = ProjectListFromMainPage(self)
         self.items_from_main_page = ItemsFromMainPage(self)
         self.present_games = PresentGame(self)
+        self.show_descriptions_games = ShowDescriptionGames(self)
+
+
+
+
+
+
 
 
 

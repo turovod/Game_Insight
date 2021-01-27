@@ -11,15 +11,6 @@
     "SOLITAIRE",
     "MIRRORS OF ALBION"
   ],
-  "ru_games_list": [
-    "АЭРОПОРТ-СИТИ",
-    "ТУЗЕМЦЫ",
-    "MYSTERY MANOR",
-    "GODS OF BOOM",
-    "PARADISE ISLAND 2",
-    "TRADE ISLAND",
-    "SOLITAIRE",
-    "ЗЕРКАЛА АЛЬБИОНА"
-  ],
-  "en_localized_data": "“The best games in the world are free!”"
+  "en_localized_data": "“The best games in the world are free!”",
+  "en_description_airport_city": "Build your very own airport and send hundreds of flights skyward! The time has come to try your hand as a pilot, a flight attendant, and even an air traffic controller. Airport City lets players take off in two exciting modes: the first offers the chance to build and manage a modern airport, while the second lets you build a city to support your international gateway. "
 }
