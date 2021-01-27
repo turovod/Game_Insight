@@ -11,7 +11,7 @@ fixture = None
 def app():
     global fixture
 
-    if fixture is None or not fixture.is_valid():
+    if fixture is None or not fixture.service_methods.is_valid():
         url_session = "\\".join([os.path.dirname(__file__), "test_data\\session_data.json"])
         with open(url_session, encoding='utf-8') as f:
             session_data = json.load(f)

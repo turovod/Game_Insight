@@ -1,9 +1,12 @@
 from selenium import webdriver
 
-from fixtures.get_file_url_helper import GetFileUrl
-from fixtures.service_helper import ServiceMethods
-from fixtures.navigation_helper import NavigationMethods
-from fixtures.sett_localization_helper import SetLocalization
+from fixtures.helpers.get_file_url_helper import GetFileUrl
+from fixtures.helpers.service_helper import ServiceMethods
+from fixtures.helpers.navigation_helper import NavigationMethods
+from fixtures.helpers.sett_localization_helper import SetLocalization
+from fixtures.helpers.wait_helper import WaitMethods
+from fixtures.tests_helpers.get_items_from_main_page_helper import ItemsFromMainPage
+from fixtures.tests_helpers.get_projects_from_main_page_helper import ProjectListFromMainPage
 from model.session_model import SessionModel
 
 
@@ -29,6 +32,12 @@ class Application:
         self.navigation_methods = NavigationMethods(self)
         self.session_models = SessionModel(self, session_data)
         self.localization = SetLocalization(self)
+        self.wait_methods = WaitMethods(self)
+        self.project_list_from_main_page = ProjectListFromMainPage(self)
+        self.items_from_main_page = ItemsFromMainPage(self)
+
+
+
 
 
 

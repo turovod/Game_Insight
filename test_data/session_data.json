@@ -1,7 +1,7 @@
 {
   "base_url": "https://www.game-insight.com/",
   "browser": "chrome",
-  "games_list": [
+  "en_games_list": [
     "AIRPORT СITY",
     "THE TRIBEZ",
     "MYSTERY MANOR",
@@ -10,5 +10,16 @@
     "TRADE ISLAND",
     "SOLITAIRE",
     "MIRRORS OF ALBION"
-  ]
+  ],
+  "ru_games_list": [
+    "АЭРОПОРТ-СИТИ",
+    "ТУЗЕМЦЫ",
+    "MYSTERY MANOR",
+    "GODS OF BOOM",
+    "PARADISE ISLAND 2",
+    "TRADE ISLAND",
+    "SOLITAIRE",
+    "ЗЕРКАЛА АЛЬБИОНА"
+  ],
+  "en_localized_data": "“The best games in the world are free!”"
 }
